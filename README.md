@@ -20,6 +20,7 @@ Terraform is an open-source infrastructure as code software tool created by Hash
 4. Generate an execution plan: `terraform plan`.
 5. Apply changes to your infrastructure: `terraform apply`.
 
+
 ## Example
 
 ```hcl
