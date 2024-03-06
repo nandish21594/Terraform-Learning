@@ -67,6 +67,7 @@ Run the following commands to interact with your Terraform configuration:
 * *terraform plan* - Preview the changes Terraform will make.
 * *terraform apply* - Apply the changes to provision infrastructure.
 * *terraform destroy -auto-approve* - Destroy all previously-created infrastructure.
+
 Note: Always review the changes carefully before applying them, and confirm any destructive actions.
 
 
