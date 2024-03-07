@@ -14,13 +14,12 @@ Terraform is an open-source infrastructure as code software tool created by Hash
 
 ## Getting Started
 
-1. Install Terraform: Follow the [installation instructions]
-    https://developer.hashicorp.com/terraform/install
-    https://learn.hashicorp.com/tutorials/terraform/install-cli.
+1. Install Terraform: Follow the [installation instructions](https://developer.hashicorp.com/terraform/install) and [installation cli instructions](https://learn.hashicorp.com/tutorials/terraform/install-cli).
 2. Write Terraform configuration files (*.tf) defining your infrastructure.
 3. Initialize a Terraform workspace: `terraform init`.
 4. Generate an execution plan: `terraform plan`.
 5. Apply changes to your infrastructure: `terraform apply`.
+
 
 ## Example
 
@@ -35,9 +34,11 @@ resource "aws_instance" "example" {
   ami           = "ami-0c55b159cbfafe1f0"
   instance_type = "t2.micro"
 }
-
+```
 
 References:
 
-Terraform Documentation: https://developer.hashicorp.com/terraform/docs
-Terraform Registry: https://registry.terraform.io/
+[Terraform Example Snippets](https://github.com/stacksimplify/hashicorp-certified-terraform-associate/tree/main)
+[Terraform Documentation](https://developer.hashicorp.com/terraform/docs)
+[Terraform Registry](https://registry.terraform.io/)
+[Github repo to learn terraform by stacksimplify](https://github.com/stacksimplify/hashicorp-certified-terraform-associate)
