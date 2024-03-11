@@ -12,3 +12,4 @@ variable "datadog_api_url" {
   description = "The Datadog Api url"
   type        = string
 }
+
