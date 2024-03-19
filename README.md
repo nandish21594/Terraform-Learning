@@ -21,6 +21,66 @@ Terraform is an open-source infrastructure as code software tool created by Hash
 5. Apply changes to your infrastructure: `terraform apply`.
 
 
+# Terraform Quick Start Guide
+
+## Installation
+**Install Terraform**: Follow the [installation instructions](https://learn.hashicorp.com/tutorials/terraform/install-cli) to install Terraform on your system and [installation cli instructions](https://learn.hashicorp.com/tutorials/terraform/install-cli).
+
+## Configuration
+**Write Terraform Configuration Files**: Create Terraform configuration files (usually with a `.tf` extension) to define your infrastructure. These files specify the resources and their configurations that Terraform will manage.
+
+## Workspace Initialization
+**Initialize a Terraform Workspace**: After writing your Terraform configuration files, navigate to the directory containing your configuration files in the terminal and run the following command:
+   ```bash
+   terraform init
+   ```
+## Execution
+**Generate an Execution Plan**: To preview the changes Terraform will make to your infrastructure before applying them, run the following command:
+
+```bash
+terraform plan
+```
+
+**Apply Changes to Your Infrastructure**: Once you've reviewed the execution plan and are satisfied with the proposed changes, apply the changes to your infrastructure by running the following command:
+
+```bash
+terraform apply
+```
+
+**Inspecting Terraform State**: Once you've reviewed the execution plan and are satisfied with the proposed changes, apply the changes to your infrastructure by running the following command:
+
+**List Resources in Terraform State**: To see a list of resources tracked by Terraform in its state file, use the following command:
+
+```bash
+terraform state list
+```
+
+**Get Information About a Specific Resource**: To get detailed information about a particular resource tracked in the Terraform state file, use the following command:
+
+```bash
+terraform state show <resource_type>.<resource_name>
+```
+Replace <resource_type> with the type of the resource (e.g., azurerm_resource_group for an Azure Resource Group) and <resource_name> with the name of the resource.
+
+**Show Detailed Representation of Current State**: To see a detailed representation of the current state of your infrastructure managed by Terraform, use the following command:
+
+```bash
+terraform show
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## Example
 
 ```hcl
@@ -42,3 +102,4 @@ References:
 [Terraform Documentation](https://developer.hashicorp.com/terraform/docs)
 [Terraform Registry](https://registry.terraform.io/)
 [Github repo to learn terraform by stacksimplify](https://github.com/stacksimplify/hashicorp-certified-terraform-associate)
+
